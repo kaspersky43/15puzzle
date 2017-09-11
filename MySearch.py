@@ -9,16 +9,21 @@ visualize = True
 
 class MySearch:	
 	def __init__(self):
+		"""Initialize the search.  Put any precomputations here."""
+		
 		pass
 	
 	def perform(self, problem):
+		"""Search for a solution for the problem and return a list of
+		   actions to get from the initial to the goal states."""
+		   
 		# Redefine this method for anything you want to do
 		
 		print 'Performing search'
 		startTime = time()
 		
-		root = Node(problem.getInitial()) 	# Setup the data structure for storing nodes to explore
-		queue = [root]						# And put the root in it
+		root = Node(problem.getInitial())
+		queue = [root]						# Setup the data structure for storing nodes to explore and put the root in it
 		
 		found = set()
 		found.add(problem.getInitial())
