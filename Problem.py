@@ -51,7 +51,7 @@ class Problem:
 		
 	def randomState(self):
 		"""Create a random state of the puzzle."""
-		
+		print 'randomizing...'
 		state = self.getSolved()
 		for i in range(1000):
 			a = self.actions(state)
@@ -63,7 +63,7 @@ class Problem:
 		return NotImplementedError
 
 	def initializeDraw(self, state):
-		""'Setup a graphical representation of puzzles."""
+		"""'Setup a graphical representation of puzzles."""
 		raise NotImplementedError
 		
 	def draw(self, action):

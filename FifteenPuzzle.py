@@ -52,8 +52,9 @@ class FifteenPuzzle(Problem):
 		newState[blank[0]][blank[1]] = action
 		newState[position[0]][position[1]] = 0
 		newState = tuple( [ tuple([ x for x in y ]) for y in newState ] )		
-		
+                
 		return newState
+                
 				
 	def cost(self, state, action):
 		"""Calculate the cost of transitioning from one state to the next."""
